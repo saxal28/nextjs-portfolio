@@ -1,10 +1,12 @@
-import Head from 'next/head'
 import { Grid, GridItem } from '../components/Grid'
 import { Navbar } from "../components/Navbar"
+import { ProjectSlider } from '../components/ProjectSlider'
 
 const projects = [
   { title: "KC HALL", subtitle: "Business Website", imgUrl: "/images/wedding.jpg" },
-  { title: "Recipax", subtitle: "Web Application", imgUrl: "/images/strawberry.jpg" }
+  { title: "Recipax", subtitle: "Web Application", imgUrl: "/images/strawberry.jpg" },
+  { title: "Your next project?", subtitle: "Freelance Work", imgUrl: "/images/sparkler.jpeg" },
+
 ]
 
 export default function Home() {
@@ -15,7 +17,7 @@ export default function Home() {
       <div className="home__container">
 
         <Grid>
-          <GridItem lg={5} xl={5}>
+          <GridItem lg={12} xl={5}>
             <div className="home__text-column">
               <div className="line-break" />
               <div className="home__subtitle">
@@ -29,10 +31,11 @@ export default function Home() {
               </div>
             </div>
           </GridItem>
-          <GridItem lg={7} xl={7}>
+          <GridItem lg={12} xl={7}>
             <div className="home__project-column">
 
-              {projects.map((project, i) => <ProjectCard key={i} {...project} />)}
+              {/* {projects.map((project, i) => <ProjectCard key={i} {...project} />)} */}
+              <ProjectSlider/>
 
             </div>
           </GridItem>
@@ -48,17 +51,3 @@ export default function Home() {
 
   )
 }
-
-const ProjectCard = ({ title, subtitle, imgUrl }) => (
-  <div className="project-card" style={{background: `url(${imgUrl})`}}>
-    <div class="project-card__container">
-      <div className="line-break" />
-      <div className="project-card__subtitle">
-        {subtitle}
-      </div>
-      <div className="project-card__title">
-        {title}
-      </div>
-    </div>
-  </div>
-)

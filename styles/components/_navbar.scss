@@ -53,6 +53,8 @@
 
         padding-bottom: 6px;
         border-bottom: 3px solid transparent;
+        margin-top: 6px;
+        display: inline-block;
 
         &:hover {
             border-color: white;
@@ -61,5 +63,9 @@
         &:not(:last-of-type) {
             margin-right: 30px;
         }
+    }
+
+    @media (max-width: $phone-breakpoint) {
+        padding: 20px;
     }
 }

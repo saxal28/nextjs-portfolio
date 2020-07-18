@@ -4,7 +4,6 @@ import Cool from "../public/images/cool.svg"
 const links = [
     { label: "Home", url: "/" },
     { label: "Contact", url: "/" },
-
 ]
 
 export const Navbar = () => {
