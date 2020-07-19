@@ -1,16 +1,25 @@
-
 body {
     margin: 0;
+    background: #444;
+}
+
+.no-style {
+    color: white !important;
+
 }
 
 @import "../node_modules/swiper/swiper.scss";
 
 @import "./variables";
 @import "./typography";
+@import "./animations";
 
 @import "./pages/home";
+@import "./pages/kchall";
+@import "./pages//contact";
 
 @import "./components/layout";
 @import "./components/navbar";
-
-
+@import "./components/page-title";
+@import "./components/tag";
+@import "./components/button";

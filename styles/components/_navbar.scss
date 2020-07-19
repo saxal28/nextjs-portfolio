@@ -5,6 +5,8 @@
 
     z-index: 100;
 
+    @include fade-in-animation(500ms);
+
     &__brand {
         margin-right: 10px;
         font-size: 16px;
@@ -35,10 +37,19 @@
     &__links-container {
         flex: 1;
         text-align: right;
-        // width: 140px;
-        // display: flex;
-        // align-items: center;
-        // justify-content: space-between;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .email-icon {
+            line-height: 1;
+            svg {
+                fill: white;
+                height: 30px;
+                width: 30px;
+            }
+          
+        }
     }
 
     &__link {
@@ -52,20 +63,30 @@
         transition: border-color 200ms;
 
         padding-bottom: 6px;
+        margin-bottom: -9px;
         border-bottom: 3px solid transparent;
-        margin-top: 6px;
         display: inline-block;
+
+        text-decoration: none !important;
 
         &:hover {
             border-color: white;
         }
 
-        &:not(:last-of-type) {
-            margin-right: 30px;
+        &.active {
+            border-color: orange;
         }
+
+        margin-right: 30px;
     }
 
     @media (max-width: $phone-breakpoint) {
         padding: 20px;
+
+        &__link {
+            &:not(:last-of-type) {
+                margin-right: 15px;
+            }
+        }
     }
 }
