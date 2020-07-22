@@ -2,9 +2,11 @@ import ReactGA from 'react-ga'
 
 export class GoogleAnalytics {
     static init() {
+        console.log("GA IN!", process.env.ga_key)
         if(process.env.ga_key) {
+
             console.log("GA INIT!")
-            ReactGA.initialize(process.env.ga_key)
+            ReactGA.initialize("UA-158537537-2")
         }
     }
 
