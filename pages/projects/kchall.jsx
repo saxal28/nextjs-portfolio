@@ -1,10 +1,10 @@
-import { LANGUAGES, ProjectLayout } from './projectLayout'
+import { LANGUAGES, ProjectLayout } from '../../components/projectLayout'
 
 
 export default function KcHall() {
 
     const props = {
-        title: "O'Fallon KC Hall",
+        title: "O'Fallon \n KC Hall",
         subtitle: "Business Website",
         websiteUrl: "https://ofallonkchall.com",
         technologies: [

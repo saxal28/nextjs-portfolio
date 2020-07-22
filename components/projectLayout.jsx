@@ -1,7 +1,7 @@
 import React from "react"
-import { Button } from '../../components/Button'
-import { PageTitle } from '../../components/PageTitle'
-import { Tag } from '../../components/Tag'
+import { Button } from './Button'
+import { PageTitle } from './PageTitle'
+import { Tag } from './Tag'
 
 export const LANGUAGES = {
     JAVASCRIPT: "Javascript",

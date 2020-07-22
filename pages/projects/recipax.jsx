@@ -1,4 +1,4 @@
-import { LANGUAGES, ProjectLayout } from "./projectLayout"
+import { LANGUAGES, ProjectLayout } from "../../components/projectLayout"
 
 export default function Recipax() {
 

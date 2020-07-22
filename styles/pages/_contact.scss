@@ -1,4 +1,8 @@
 .contact-page {
+
+    .page__title {
+        max-width: 450px;
+    }
     .contact-section {
         &__contact-text {
             display: flex;
