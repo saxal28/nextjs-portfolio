@@ -15,6 +15,21 @@
     }
 }
 
+@keyframes blur {
+    from {
+        filter: blur(0px);
+    } to {
+        filter: blur(13px);
+    }
+}
+
+@mixin blur-animation($delay) {
+    animation-name: blur;
+    animation-duration: 400ms;
+    animation-delay: $delay;
+    animation-fill-mode: forwards;
+}
+
 @mixin fade-in-animation($delay) {
     opacity: 0;
     animation-name: fade-in;

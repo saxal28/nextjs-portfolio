@@ -5,7 +5,7 @@ body {
 
 .no-style {
     color: white !important;
-
+    text-decoration: none !important;
 }
 
 @import "../node_modules/swiper/swiper.scss";
@@ -13,10 +13,12 @@ body {
 @import "./variables";
 @import "./typography";
 @import "./animations";
+@import "./mixins";
 
 @import "./pages/home";
 @import "./pages/kchall";
 @import "./pages//contact";
+@import "./pages/recipax";
 
 @import "./components/layout";
 @import "./components/navbar";

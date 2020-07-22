@@ -1,5 +1,3 @@
 .kchall-page {
-    .page {
-        background-image: url("/images/kchall.jpg");
-    }
+    @include page-theme("/images/kchall.jpg", #7e0cf5);
 }
