@@ -72,7 +72,7 @@ export const ProjectSlider = props => {
         <div>
             <Swiper {...params}>
                 {projects.map(({ title, subtitle, imgUrl,url }) =>
-                    <a className="no-style" href={url}><div className="project-card" style={{ background: `url(${imgUrl})` }}>
+                    <a key={url} className="no-style" href={url}><div className="project-card" style={{ background: `url(${imgUrl})` }}>
                         <div className="project-card__container">
                             <div className="line-break" />
                             <div className="project-card__subtitle">

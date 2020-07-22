@@ -19,7 +19,7 @@ export const Tag = ({ random = false, label }) => {
     }
 
     return (
-        <div className="tag" style={backgroundColor}>
+        <div className="tag">
             {label}
         </div>
     )

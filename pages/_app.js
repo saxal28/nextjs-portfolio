@@ -6,6 +6,7 @@ export default function App({ Component, pageProps }) {
 
   useEffect(() => {
     GoogleAnalytics.init()
+    GoogleAnalytics.logPageView()
   }, [])
 
   return <Component {...pageProps} />

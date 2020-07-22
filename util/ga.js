@@ -11,6 +11,7 @@ export class GoogleAnalytics {
     }
 
     static logPageView() {
+        console.log("GA LOG: ", window.location.pathname)
         ReactGA.set({ page: window.location.pathname })
         ReactGA.pageview(window.location.pathname)
     }
